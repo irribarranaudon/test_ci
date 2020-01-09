@@ -1,7 +1,7 @@
 image: alpine:3.11.2
 
 before_script:
-  - echo $CI_PROJECT_PATH
+  - echo $CI_PROJECT_DIR
   - apk update && apk fetch openjdk8 && apk add openjdk8
 
 probando:
