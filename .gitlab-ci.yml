@@ -1,0 +1,5 @@
+image: alpine:3.11.2
+
+before_script:
+  - apk update && apk fetch openjdk8 && apk add openjdk8
+  - java -version
