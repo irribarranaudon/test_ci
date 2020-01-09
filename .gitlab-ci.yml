@@ -5,4 +5,4 @@ before_script:
 
 probando:
   script:
-    - cp $CI_PROJECT_DIR/target/demo_cicd-0.0.1-SNAPSHOT.jar /home/pirribarra/test
+    - sudo cp $CI_PROJECT_DIR/target/demo_cicd-0.0.1-SNAPSHOT.jar /home/pirribarra/test
