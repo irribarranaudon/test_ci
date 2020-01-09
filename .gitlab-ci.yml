@@ -1,9 +1,8 @@
-image: alpine:3.11.2
-
 before_script:
+  - java -version
   - echo $CI_PROJECT_DIR
-  - apk update && apk fetch openjdk8 && apk add openjdk8
+  - mvn package
 
 probando:
   script:
-    - java -version
+    - cp $CI_PROJECT_DIR/target/ /home/pirribarra/test
