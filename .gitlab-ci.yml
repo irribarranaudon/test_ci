@@ -2,7 +2,10 @@ before_script:
   - java -version
   - echo $CI_PROJECT_DIR
   - mvn package
-
+  - only:
+      - master
 probando:
   script:
-    - sudo cp $CI_PROJECT_DIR/target/demo_cicd-0.0.1-SNAPSHOT.jar /home/pirribarra/test
+    - sudo cp $CI_PROJECT_DIR/target/demo_cicd-0.0.1-SNAPSHOT.jar /home/pirribarra/docker
+  only:
+    - master
